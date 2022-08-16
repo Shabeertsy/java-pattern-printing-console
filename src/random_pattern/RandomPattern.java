@@ -1,5 +1,7 @@
 package random_pattern;
 
+import java.util.Random;
+
 public class RandomPattern {
 	
 public void triPattern() {
@@ -105,7 +107,8 @@ public void revPyramidPattern() {
 public static void main(String[] args) {
 	RandomPattern rnd=new RandomPattern();
 	
-	rnd.revPyramidPattern();
+	Random random=new Random();
+	int number=random.nextInt(7);
 	
 }
 }
