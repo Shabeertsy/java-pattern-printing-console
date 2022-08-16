@@ -108,7 +108,31 @@ public static void main(String[] args) {
 	RandomPattern rnd=new RandomPattern();
 	
 	Random random=new Random();
-	int number=random.nextInt(7);
+	int number=random.nextInt(7-1+1)+1;
+	System.out.println(number);
+	switch(number) {
+	case 1:
+		rnd.triPattern();
+		break;
+	case 2:
+		rnd.reverseTriPattern();
+		break;
+	case 3:
+		rnd.hollowREctangle();
+		break;
+	case 4:
+		rnd.rectanglePattern();
+		break;
+	case 5:
+		rnd.butterFlyPattern();
+		break;
+	case 6:
+		rnd.pyramidPattern();
+		break;
+	case 7:
+		rnd.revPyramidPattern();
+		break;
+	}
 	
 }
 }
